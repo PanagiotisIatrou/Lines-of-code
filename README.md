@@ -2,6 +2,8 @@
 A quick python script to find total lines of code of specific files in a directory.
 It is used to only include specific file extensions and is meant to use only in Terminal as it relies heavily on command line arguements.
 
+It is useful because it allows you to find how many lines of code you've written in a big project.
+
 # How to Use
 The **first parameter** should always be the **root directory**. Make sure to include the path in **double quotes ""** so that it works with directories that contain spaces.
 
