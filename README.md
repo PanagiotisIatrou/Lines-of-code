@@ -9,7 +9,12 @@ The **first parameter** should always be the **root directory**. Make sure to in
 
 **Prameters:**
 - **-p** prints the name of every file, as well as the lines of code it contains.
-- **[ext]** is used to include files with ext extension. For example, [.py], [.cpp], [.cs.meta]. You can add as many of those as you want. 
+- **-ps** prints the name of every file, as well as the lines of code it contains but in ascending order depending of the lines of code of each file.
+- **-psi** prints the name of every file, as well as the lines of code it contains but in descending order depending of the lines of code of each file.
+- **[ext]** is used to include files with ext extension. For example, [.py], [.cpp], [.cs.meta]. You can add as many of those as you want.
+
+**Notes:**  
+- Only one of -p, -ps, -psi parameters can be assigned.
 
 # Examples
 - ```lines_of_code "MyDirectory\my files" [.py]```
