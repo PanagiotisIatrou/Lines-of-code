@@ -39,9 +39,9 @@ for root, dirs, files in os.walk(scripts_path):
 
 file_count = len(file_names)
 if (allow_print or allow_print_sorted or allow_print_sorted_inverted):
-	# Sort the lists if -ps
+	# Sort the lists if -ps or -psi
 	if (allow_print_sorted or allow_print_sorted_inverted):
-		tuples = zip(*sorted(zip(file_lengths, file_names), reverse=not allow_print_sorted_inverted))
+		tuples = zip(*sorted(zip(file_lengths, file_names), reverse=allow_print_sorted_inverted))
 		file_lengths, file_names = [ list(tuple) for tuple in tuples]
 
 	# Find longest file name
